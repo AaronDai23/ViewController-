@@ -48,7 +48,8 @@
     //直接 模型
 //    id model = self.dataSource[indexPath.row];
     NSString *model = [@[@"2",@"1"] mj_JSONString];
-    //hhh
+    //hhh////
+    //
     [VC_FACTORY pushWithVcId:VC_DETAIL vc:self model:model callback:^(id model) {
         NSLog(@"我曹，回调了!");
         [self.tableView reloadData];
